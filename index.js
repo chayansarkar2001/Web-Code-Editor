@@ -74,7 +74,6 @@ document.querySelectorAll('textarea').forEach((textarea)=>{
     textarea.addEventListener('keydown', function(e) {
         if (e.key == 'Tab') {
             e.preventDefault();
-            console.log('tabpress')
             var start = this.selectionStart;
             var end = this.selectionEnd;
 
