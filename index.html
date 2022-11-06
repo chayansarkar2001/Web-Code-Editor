@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Code Editor</title>
+</head>
+<body>
+    <header><h1>Code Editor</h1></header>
+    <div class="container">
+        <div class="editor">
+            <div class="selectLang">
+                <div class="lang active" id="html">HTML</div>
+                <div class="lang" id="css">CSS</div>
+                <div class="lang" id="javascript">JavaScript</div>
+                <div id="runButton">Run</div>
+            </div>
+            <div id="code-editor">
+                <textarea class="code" id="htmlCode" spellcheck="false"></textarea>
+                <textarea class="code disableCode" id="cssCode" spellcheck="false"></textarea>
+                <textarea class="code disableCode" id="javascriptCode" spellcheck="false"></textarea>
+            </div>
+        </div>
+        <div class="output">
+            <iframe id="webview"></iframe>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
