@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --botton-color: #363535;
+}
+header {
+    height: 70px;
+    background-color: rgb(14, 13, 13);
+    padding-top: 20px;
+    font-family: sans-serif;
+    padding-left: 30px;
+    color: white;
+}
+.container {
+    display: flex;
+    width: auto;
+}
+.editor {
+    flex:50;
+    height: 100%;
+}
+.code-editor {
+    height: 100%;
+}
+.selectLang {
+    background-color: #454545;
+    padding-left: 15px;
+}
+.lang {
+    display: inline-block;
+    margin: 3px 6px;
+    margin-bottom: 0;
+    padding: 10px;
+    font-family: sans-serif;
+    border-top: 4px solid var(--botton-color);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+    background-color: var(--botton-color);
+}
+.active {
+    border-top: 4px solid rgb(216, 177, 6);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: rgb(19, 18, 18);
+    color:white;
+}
+#runButton {
+    margin:5px 20px;
+    margin-bottom: 0;
+    padding: 9px 12px;
+    font-family: sans-serif;
+    color: white;
+    background-color: rgb(26, 224, 26);
+    box-shadow: 1px 3px 0 2px rgb(8, 53, 8);
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+}
+
+.code {
+    background-color: rgb(19, 18, 18);
+    height: 83vh;
+    width: 100%;
+    color: rgb(177, 174, 9);
+    font-size: 20px;
+    padding: 5px;
+    overflow: auto;
+    outline: none;
+}
+
+.disableCode {
+    display: none;
+}
+
+#webview {
+    background-color: white;
+    height: 88vh;
+    width: 100%;
+}
+ 
+.output {
+    flex: 50;
+    padding: 5px;
+    height: 100%;
+    border: none;
+}
+textarea {
+    tab-size: 2;
+}
